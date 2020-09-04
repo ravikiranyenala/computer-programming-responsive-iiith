@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel = 'stylesheet' type = 'text/css' href = 'basicControlFlow.css' />
-<!-- <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'> 
 <script type = 'text/javascript' src = 'basicControlFlow.js' ></script>
 <title>Computer-Programming</title>
 </head>
@@ -15,8 +15,7 @@
 	<div class = 'inputDivisionTitle' ><div class = 'initializePic' ></div><div class = 'initializeText'>Initialize</div></div>
 	<div class = 'inputDivisionBody' >
 		<div  class = 'instructionText' > Select the Day :</div>
-		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn1Id' value = '1' >
-		<label class = 'radioText' for = 'day_radio' >DAY : 1</label></div>
+		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn1Id' value = '1'><label class = 'radioText' for = 'day_radio' >DAY : 1</label></div>
 		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn2Id' value = '2'><label class = 'radioText' for = 'day_radio' >DAY : 2</label></div>
 		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn3Id' value = '3'><label class = 'radioText' for = 'day_radio' >DAY : 3</label></div>
 		<div class = 'radioButtonHolder' ><input type = 'radio' class = 'radiobutton' name = 'day_radio' id = 'radioBtn4Id' value = '4'><label class = 'radioText' for = 'day_radio' >DAY : 4</label></div>
@@ -54,7 +53,7 @@
 		<div 	id = 'defaultId'      >&emsp;&emsp;default : str = null;</div>
 		<div 	id = 'defaultBreakId'   class='break'	 >&emsp;&emsp;&emsp;break; </div>
 		<div 	id = 'closeBrc1Id'    >&emsp;}</div>
-		<div 	id = 'ifId'           >&emsp;if ( strcmp( str, 'Sunday' ) == 0 ) {</div>
+		<div 	id = 'ifId'           >&emsp;if (strcmp( str, 'Saturday' ) == 0)||(strcmp( str, 'Sunday' ) == 0) {</div>
 		<div 	id = 'holidayId'      >&emsp;&emsp;printf ( 'HOLIDAY' ); }</div>
 		<div 	id = 'elseIfId'       >&emsp;else if ( str != null ) {</div>
 		<div 	id = 'workingdayId'   >&emsp;&emsp;printf ( 'WORKING DAY' ); }</div>
