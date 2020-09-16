@@ -34,8 +34,14 @@ window.view = {
  	},
 	getInput: function() {
 		var inputValue = document.getElementById('simpleLoopInput').value
+		if (inputValue>20){
+			//this.changeClass( 'btnNext', 'buttonDisable nextButton')
+			return alert("invalid input");
+		}
+		else{
 		model.inp = Number(inputValue)
 		this.clearExecutionSection()
+	}
 	},
 	getNestedInput: function() {
 		var inputValue = document.getElementById('nestedLoopInput').value
