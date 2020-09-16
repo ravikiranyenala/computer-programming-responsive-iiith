@@ -286,6 +286,10 @@ window.view = {
 			alert('Enter Value of a and b');
 			return false;
 		}
+		else if (valueA1>10 || valueB1>10) {
+			alert('Enter numeric value of a and b between 0-10');
+			return false;
+		}	
 		else if ( isNaN(valueA1) || isNaN(valueB1)) {
 			alert('Enter numeric value of a and b');
 			return false;
@@ -293,7 +297,7 @@ window.view = {
 		else if (valueA2 >= valueB2 || valueB2 > 30) {
 			alert('Integration Limits are from 0 to 30, b > a and b-a >= 1');
 			return false;
-		}
+		}		
 		else {
 			model.inputValueA = valueA2;
 			model.inputValueB = valueB2;
